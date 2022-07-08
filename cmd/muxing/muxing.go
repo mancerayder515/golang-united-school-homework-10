@@ -1,4 +1,4 @@
-package muxing
+package main
 
 import (
 	"fmt"
@@ -6,7 +6,6 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"os"
 	"strconv"
 	"strings"
 )
