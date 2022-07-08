@@ -6,6 +6,7 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -58,11 +59,11 @@ func headersHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 //main /** starts program, gets HOST:PORT param and calls Start func.
-/*func main() {
+func main() {
 	host := os.Getenv("HOST")
 	port, err := strconv.Atoi(os.Getenv("PORT"))
 	if err != nil {
 		port = 8081
 	}
 	Start(host, port)
-}*/
+}
